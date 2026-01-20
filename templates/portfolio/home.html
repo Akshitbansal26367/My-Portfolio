@@ -1,0 +1,32 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+{% block title %}Home | Portfolio{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Turning Vision Into Reality<br>With Code And Design.</h1>
+        <p>
+            As a skilled <strong>backend-focused developer</strong>, I am dedicated to turning ideas
+            into scalable and efficient web applications. I specialize in <strong>Django
+            development</strong> and have a strong interest in <strong>machine learning</strong>, exploring how
+            data-driven models can enhance real-world software solutions.
+        </p>
+
+        <div class="buttons">
+            <a href="{% static 'portfolio/resume/Akshit_Bansal_Resume.pdf' %}" class="btn primary" target="_blank" download>Download Resume</a>
+            <a href="{% url 'contact' %}" class="btn secondary">Contact</a>
+        </div>
+        <p class="hero-meta">
+        Open to internships and full-time opportunities • India / Remote
+    </p>
+    </div>
+
+
+    <div class="hero-image">
+        <img src="{% static 'portfolio/images/profile.jpeg' %}" alt="Profile">
+    </div>
+</section>
+{% endblock %}

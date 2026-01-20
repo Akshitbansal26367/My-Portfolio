@@ -1,0 +1,78 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+{% block title %}Projects | Portfolio{% endblock %}
+
+{% block content %}
+<section class="projects-section">
+
+    <div class="projects-header">
+        <h2>My Projects</h2>
+        <p>
+            A selection of projects that demonstrate my skills in
+            backend development, Django, and problem-solving.
+        </p>
+    </div>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <h3>House Price Prediction System</h3>
+            <p>
+                ML project which predicts the price of the property
+                using various parameters such as the area, family size,
+                property size.
+            </p>
+
+            <div class="project-tags">
+                <span>Linear Regression</span>
+                <span>Numpy</span>
+                <span>Pandas</span>
+            </div>
+
+            <div class="project-links">
+                <a href="https://github.com/Akshitbansal26367/House-Price-Prediction-Linear-Regression" target="_blank">GitHub Link</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Django To Do App</h3>
+            <p>
+                A simple To Do application built 
+                using Django to understand and implement
+                CRUD operations create, read, update, and delete tasks.
+            </p>
+
+            <div class="project-tags">
+                <span>Django</span>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+
+            <div class="project-links">
+                <a href="https://github.com/Akshitbansal26367/To---Do-App-Django" target="_blank">GitHub Link</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Django Blogs Application</h3>
+            <p>
+                Django application where you can find the blogs of different
+                categories such as sports, technology, bussiness, science.
+            </p>
+
+            <div class="project-tags">
+                <span>Django</span>
+                <span>MVT architecture</span>
+                <span>ORM</span>
+            </div>
+
+            <div class="project-links">
+                <a href="https://github.com/Akshitbansal26367/Django-Blogs-App" target="_blank">GitHub Link</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+{% endblock %}
